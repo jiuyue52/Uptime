@@ -30,8 +30,20 @@ const workerConfig = {
         'User-Agent': 'Uptimeflare',
       },
     },
-    {  
+    {
       id: 'foo_monitor_2',
+      name: 'MinIO',
+      method: 'HEAD',
+      target: 'https://minio.vlo.cc',
+      tooltip: 'My MinIO',
+      expectedCodes: [200],
+      timeout: 10000,
+      headers: {
+        'User-Agent': 'Uptimeflare',
+      },
+    },
+    {  
+      id: 'foo_monitor_3',
       name: 'Shiroi-BJ',
       method: 'TCP_PING',
       target: '116.205.112.89:2323',
@@ -41,6 +53,40 @@ const workerConfig = {
         'User-Agent': 'Uptimeflare',
       },
     },
+    {  
+      id: 'foo_monitor_4',
+      name: 'Shiroi-CD',
+      method: 'TCP_PING',
+      target: '110.40.68.61:2323',
+      expectedCodes: [200],
+      timeout: 10000,
+      headers: {
+        'User-Agent': 'Uptimeflare',
+      },
+    },
+    {  
+      id: 'foo_monitor_5',
+      name: 'Shiroi-SG',
+      method: 'TCP_PING',
+      target: '190.92.200.200:2323',
+      expectedCodes: [200],
+      timeout: 10000,
+      headers: {
+        'User-Agent': 'Uptimeflare',
+      },
+    },
+    {  
+      id: 'foo_monitor_6',
+      name: 'Shiroi-HK',
+      method: 'TCP_PING',
+      target: '45.207.193.5:2323',
+      expectedCodes: [200],
+      timeout: 10000,
+      headers: {
+        'User-Agent': 'Uptimeflare',
+      },
+    },
+    
   ],
   notification: {
     // [Optional] apprise API server URL
