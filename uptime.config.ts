@@ -86,7 +86,6 @@ const workerConfig = {
         'User-Agent': 'Uptimeflare',
       },
     },
-    
   ],
   notification: {
     // [Optional] apprise API server URL
