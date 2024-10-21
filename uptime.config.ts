@@ -57,7 +57,7 @@ const workerConfig = {
       id: 'foo_monitor_4',
       name: 'Shiroi-CD',
       method: 'TCP_PING',
-      target: '110.40.68.61:2323',
+      target: '110.40.48.243:2323',
       expectedCodes: [200],
       timeout: 10000,
       headers: {
